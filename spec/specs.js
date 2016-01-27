@@ -11,3 +11,10 @@ describe("PlayerTwo", function(){
     expect(testPlayer.playerTwoMark).to.equal("O");
   });
 });
+
+describe("Space", function(){
+  it("reutnrs the player's mark", function(){
+    var testSpace = new Space(1,2);
+    expect(testSpace.xCoordinate).to.equal(1);
+  });
+});
