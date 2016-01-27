@@ -8,4 +8,5 @@ function PlayerTwo (playerTwoMark) {
 
 function Space (x, y) {
   this.xCoordinate = x;
+  this.yCoordinate = y;
 };

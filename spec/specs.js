@@ -17,4 +17,8 @@ describe("Space", function(){
     var testSpace = new Space(1,2);
     expect(testSpace.xCoordinate).to.equal(1);
   });
+  it("returns the player's mark", function() {
+    var testSpace = new Space(1,2);
+    expect(testSpace.yCoordinate).to.equal(2);
+   });
 });
