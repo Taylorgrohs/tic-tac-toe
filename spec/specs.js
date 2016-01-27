@@ -1,14 +1,14 @@
-describe("PlayerOne", function(){
-  it("returns the player one's mark", function() {
-    var testPlayer = new PlayerOne("X");
-    expect(testPlayer.playerOneMark).to.equal("X");
+describe("Player", function(){
+  it("returns the player's mark", function() {
+    var testPlayer = new Player("X");
+    expect(testPlayer.playerMark).to.equal("X");
   });
 });
 
-describe("PlayerTwo", function(){
-  it("returns the player two's mark", function() {
-    var testPlayer = new PlayerTwo("O");
-    expect(testPlayer.playerTwoMark).to.equal("O");
+describe("Player", function(){
+  it("returns the player's mark", function() {
+    var testPlayer = new Player("O");
+    expect(testPlayer.playerMark).to.equal("O");
   });
 });
 
@@ -20,5 +20,10 @@ describe("Space", function(){
   it("returns the player's mark", function() {
     var testSpace = new Space(1,2);
     expect(testSpace.yCoordinate).to.equal(2);
+   });
+   it("lets a player mark a space", function() {
+     var testPlayer = new Player("X");
+     var testSpace = new Space(1, 2);
+     expect(testSpace.markedBy(testPlayer.playerMark)).to.equal(testPlayer.playerMark);
    });
 });
