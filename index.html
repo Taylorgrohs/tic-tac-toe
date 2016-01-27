@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-1.12.0.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Movie Tickets</title>
+  </head>
+  <body>
+    <div class="questions">
+         <div class="container">
+           <div class="jumbotron">
+             <h1>T & G's Awesome Movie Experience</h1>
+           </div>
+           <div class="container">
+             <h1>Please make your selections</h1>
+           </div>
+         </div>
+         <div class="container">
+           <form>
+             <div class="row">
+               <div class="col-sm-3">
+               <h3>Please select a movie</h3>
+               <select id="movie">
+                 <option value="No Movie Selected">Please select a movie</option>
+                 <option value="The Forest">The Forest</option>
+                 <option value="Cool Runnings">Cool Runnings</option>
+                 <option value="Interstellar">Interstellar</option>
+                 <option value="Legally Blonde">Legally Blonde</option>
+               </select>
+               </div>
+               <div class="col-sm-3">
+               <h3>Please select a time</h3>
+               <select id="time">
+                 <option value="No Time Selected">Please select a time</option>
+                 <option value="12:00pm">12:00pm</option>
+                 <option value="3:00pm">3:00pm</option>
+                 <option value="6:45pm">6:45pm</option>
+                 <option value="9:15pm">9:15pm</option>
+               </select>
+               </div>
+
+
+               <div class="col-sm-3">
+                 <h3>Please select your age</h3>
+                 <select id="age">
+                   <option value="No Age Selected">Please select your age</option>
+                   <option value="Senior">senior</option>
+                   <option value="Student">student</option>
+                   <option value="Adult">adult</option>
+                   <option value="Toddler">toddler</option>
+                 </select>
+               </div>
+
+               <div class="col-sm-3">
+                 <h3>Please Number of Tickets</h3>
+                 <select id="number">
+                   <option value="1">1</option>
+                   <option value="2">2</option>
+                   <option value="3">3</option>
+                   <option value="4">4</option>
+                 </select>
+               </div>
+
+               </div>
+              <button type="submit"class="btn btn-primary btn">Go to the movies!</button>
+            </div>
+           </form>
+           <div class="container ticket">
+            <div class="backgroundimg">
+              <ul class="display">
+
+              </ul>
+            </div>
+           </div>
+  </body>
+</html>
